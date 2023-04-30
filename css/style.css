@@ -1,0 +1,291 @@
+@font-face {
+    font-family: darkadam;
+    src: url(../Fonts/Dark\ Adam.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.logo{
+    display: flex;
+    height: 100px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: darkadam;
+    border-style: outset;
+    border-color: #dccaca;
+    border-radius: 20px;
+    border-width: 10px;
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+    color: orange;
+}
+
+.cartel-inicio{
+    background-color: rgb(0, 0, 0);
+    text-decoration:none;
+    text-transform: uppercase;
+    color: orange;
+    border: 2px solid orange;
+    padding: 0.1cm;
+    font-size: 20px
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    border-style: solid;
+    background-color: #1b263b;
+    margin: 0;
+}
+.menu li a{
+    text-decoration: none;
+    color: gray;
+    cursor: crosshair;
+}
+.menu li{
+padding: 1em;
+border-right:  1px solid gray;
+border-left: 1px solid gray;
+}
+.menu li:hover{
+    background-color: #2a3240;
+}
+
+.menu li a:hover{
+    color: orange;
+}
+
+.galeria{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    background: black;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background-color: #1c1f24;
+}
+.columna1{
+    color: white;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 25%;
+}
+.columna1 span{
+    color: orange;
+}
+
+.subtitulo1{
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.columna2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+h2{
+    color: orange;
+    text-transform: uppercase;
+}
+
+
+.subtitulo-medio{
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.noticia {
+    color: white;
+    display: flex;
+    text-justify: auto;
+    flex-direction: column;
+    text-decoration:none;
+    text-align: center;
+    padding: 2em;
+    background-color: #2f3844;
+    border-bottom: 1px solid gray;
+}
+
+.noticia:hover{
+    background-color:#2a3240;
+}
+
+.columna3{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 25%;
+}
+
+.noticia-derecha{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.videosimple{
+width: 250px;
+padding: 1em;
+}
+
+.partidos-hoy{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.partidos-hoy li {
+    background-color: #1b263b;
+    display: inline-block;
+    color: gray;
+    font-size: 15px;
+    list-style-type: none;
+    border: 2px solid gray;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.logo-partidos{
+    height: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 40vh;
+    background-color:#1b263b;
+    color: white;
+    flex-direction: column;
+}
+
+.logo-redes{
+    width: 20px;
+}
+.redes{
+    display: flex;
+}
+.footer-total{
+    display: flex;
+}
+.partidos-centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.top-players-padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.top-players-ul{
+    color: #87a3bf;
+    font-size: 25px;
+    border: 2px solid gray;
+    width: 300px;
+    background-color: #1b263b;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.top-players-ul li{
+    padding: 15px;
+    border: 1px solid gray;
+}
+.top-players-cara{
+    height: 30px;
+    width: 30px;
+}
+.top-players-bandera{
+    height: 18px;
+}
+
+.section-top-players{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.kd{
+    font-size: 15px;
+}
+
+.resultados-padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.resultados-ul{
+    color: #87a3bf;
+    font-size: 25px;
+    border: 2px solid gray;
+    width: 370px;
+    background-color: #1b263b;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.resultados-ul li{
+    font-size: 20px;
+    color: #929a9e;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+.victoria{
+    color: green;
+}
+
+.derrota{
+    color: red;
+}
+
+.section-resultados{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
