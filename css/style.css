@@ -53,9 +53,9 @@ h1 a{
     cursor: crosshair;
 }
 .menu li{
-padding: 1em;
-border-right:  1px solid gray;
-border-left: 1px solid gray;
+    padding: 1em;
+    border-right:  1px solid gray;
+    border-left: 1px solid gray;
 }
 .menu li:hover{
     background-color: #2a3240;
@@ -65,12 +65,76 @@ border-left: 1px solid gray;
     color: orange;
 }
 
-.galeria{
-    display: flex;
-    height: 200px;
-    justify-content: center;
-    background: black;
+.galeria-grid{
+    display: grid;
+    padding-top: 50px;
+    grid-template-rows: 400px 200px 400px 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "luken cs2 cs2"
+    "luken b1t cadian"
+    "monitores monitores cadian"
+    "s1mple karrigan karrigan";
+    grid-gap: 20px 5px;
 }
+
+.galeria-border{
+    border: 4px solid orange;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+
+.galeria-border:hover{
+    transform: scale(1.04);
+    transition: all 0.9s;
+    filter: sepia(100%);
+}
+
+#luken{
+    grid-area: luken;
+    background-image: url(../Img/luken.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#s1mple{
+    grid-area: s1mple;
+    background-image: url(../Img/simple1.jpg);
+    background-size: cover;
+}
+
+#b1t{
+    grid-area: b1t;
+    background-image: url(../Img/b1t.jpg);
+    background-size: cover;
+    background-position: center ;
+}
+
+#monitores{
+    grid-area: monitores;
+    background-image: url(../Img/monitorcs.jpg);
+    background-position: center;
+}
+
+#cadian{
+    grid-area: cadian;
+    background-image: url(../Img/cadiaN.jpg);
+    background-size: cover;
+}
+
+#cs2{
+    grid-area: cs2;
+    background-image: url(../Img/cs2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#karrigan{
+    grid-area: karrigan;
+    background-image: url(../Img/karrigan.jpg);
+    background-size: cover;
+}
+
 .contenedor{
     display: flex;
     justify-content: space-between;
