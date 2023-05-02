@@ -79,6 +79,105 @@ h1 a{
     font-size: 20px;
 }
 
+#logoresponsive a{
+    text-decoration: none;
+}
+
+#logoresponsive a:hover{
+    color: orange;
+}
+
+/* Index.html */ /* Index.html */ /* Index.html */ /* Index.html */ /* Index.html */ /* Index.html */
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background-color: #1c1f24;
+}
+.columna1{
+    color: white;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 25%;
+}
+.columna1 span{
+    color: orange;
+}
+
+.subtitulo1{
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.columna2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 100px;
+}
+
+h2{
+    color: orange;
+    text-transform: uppercase;
+}
+
+
+.subtitulo-medio{
+    text-align: center;
+    padding: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.noticia {
+    color: white;
+    display: flex;
+    text-justify: auto;
+    flex-direction: column;
+    text-decoration:none;
+    text-align: center;
+    padding: 2em;
+    background-color: #2f3844;
+    border-bottom: 1px solid gray;
+}
+
+.noticia:hover{
+    background-color:#2a3240;
+}
+
+.columna3{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 25%;
+}
+
+.noticia-derecha{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.videosimple{
+width: 250px;
+padding: 1em;
+}
+
+/* Galeria.html *//* Galeria.html *//* Galeria.html *//* Galeria.html *//* Galeria.html *//* Galeria.html */
+
 .galeria-responsive{
     width: 100%;
     min-height: 500px;
@@ -244,122 +343,28 @@ footer a{
     }
 }
 
-
-
-.contenedor{
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    width: 80vw;
-    margin: auto;
-    text-align: center;
-    background-color: #1c1f24;
-}
-.columna1{
-    color: white;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    width: 25%;
-}
-.columna1 span{
-    color: orange;
-}
-
-.subtitulo1{
-    color: orange;
-    text-transform: uppercase;
-    text-align: center;
-    list-style-type: none;
-    margin-top: 50px;
-}
-
-.columna2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    margin-bottom: 100px;
-}
-
-h2{
-    color: orange;
-    text-transform: uppercase;
-}
-
-
-.subtitulo-medio{
-    text-align: center;
-    padding: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.noticia {
-    color: white;
-    display: flex;
-    text-justify: auto;
-    flex-direction: column;
-    text-decoration:none;
-    text-align: center;
-    padding: 2em;
-    background-color: #2f3844;
-    border-bottom: 1px solid gray;
-}
-
-.noticia:hover{
-    background-color:#2a3240;
-}
-
-.columna3{
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    width: 25%;
-}
-
-.noticia-derecha{
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: lighter;
-    margin-top: 50px;
-}
-
-.videosimple{
-width: 250px;
-padding: 1em;
-}
-
-.partidos-hoy{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 380px;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.partidos-hoy li {
-    background-color: #1b263b;
-    display: inline-block;
-    color: gray;
-    font-size: 15px;
-    list-style-type: none;
-    border: 2px solid gray;
-    padding: 5px;
-    text-transform: uppercase;
-}
+/* Partidos.html */ /* Partidos.html */ /* Partidos.html */ /* Partidos.html */ /* Partidos.html */ 
 
 .logo-partidos{
     height: 25px;
 }
-.partidos-centrar{
-    display: flex;
-    justify-content: center;
+
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+.container a{
+    display: flex;
+    border: 2px solid orange;
+    justify-content: center;
+    padding: 50px;
+    letter-spacing: 5px;
+    background-color: #1b263b;
+    color: orange;
+}
+
+/* Estadisticas.html */ /* Estadisticas.html */ /* Estadisticas.html */ /* Estadisticas.html */
 
 .top-players-padre{
     display: flex;
@@ -402,6 +407,8 @@ padding: 1em;
 .kd{
     font-size: 15px;
 }
+
+/* Resultados.html */ /* Resultados.html */ /* Resultados.html */ /* Resultados.html */ /* Resultados.html */
 
 .resultados-padre{
     display: flex;
