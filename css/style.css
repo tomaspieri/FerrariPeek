@@ -349,6 +349,21 @@ footer a{
     height: 25px;
 }
 
+.contenedor-container{
+    background-color: rgb(21, 181, 230);
+    background-image: url(../Img/escenario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1500px) {
+    .contenedor-container{
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    
+}
+
 .container{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -364,7 +379,194 @@ footer a{
     color: orange;
 }
 
+@media screen and (max-width: 768px) {
+    .container a{
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width:358px) {
+    .logo-partidos{
+        height: 10px;
+    }
+    .container a{
+        font-size: 11px;
+        height: 25x;
+        width: 300px;
+        letter-spacing: normal;
+    }
+}
+
+
+
 /* Estadisticas.html */ /* Estadisticas.html */ /* Estadisticas.html */ /* Estadisticas.html */
+.top-players-bandera{
+    height: 18px;
+}
+.top-players-contenedor{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(../Img/csgofondo.jpg);
+    height: 1000px;
+    background-size: cover;
+}
+
+.top-players-contenedor h2{
+    height: 30px;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-left: 80px;
+    text-decoration: underline;
+}
+
+.top-players-left{
+    background-color: #1b263b;
+    color: orange;
+    width: 500px;
+    height: 320px;
+    margin-top: 340px;
+    margin-left: 100px;
+}
+
+.top-players-right{
+    background-color: #1b263b;
+    color: orange;
+    width: 500px;
+    height: 320px;
+    margin-top: 340px;
+    margin-right: 100px;
+}
+
+.top-players-ul-2{
+    list-style-type: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+.top-players-ul-2 li{
+    border: 2px solid orange;
+    height: 80px;
+}
+
+.top-players-ul-2 li:hover{
+    background-color: gray;
+}
+
+.top-players-cara{
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 1772px) {
+    .top-players-contenedor{
+        height: 600px;
+    }
+    .top-players-left{
+        width: 600px;
+        margin-top: 150px;
+    }
+    .top-players-right{
+        width: 600px;
+        margin-top: 150px;
+    }
+    .top-players-contenedor h2{
+        font-size: 50px;
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 30px;
+    }
+    .top-players-ul-2 p{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .top-players-cara{
+        height: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 967px) {
+    .top-players-contenedor{
+        height: 500px;
+    }
+    .top-players-left{
+        margin-top: 100px;
+    }
+    .top-players-right{
+        margin-top: 100px;
+    }
+    .top-players-contenedor h2{
+        font-size: 50px;
+        margin-top: 40px;
+        margin-left: 40px;
+        font-size: 30px;
+    }
+    .top-players-ul-2 p{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .top-players-cara{
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 615px){
+    .top-players-contenedor{
+        display: flex;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.top-players-left{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 200px;
+    height: 320px;
+}
+.top-players-right{
+    margin-top: 30px;
+    margin-right:20px;
+    width: 200px;
+    height: 320px;
+}
+.top-players-contenedor h2{
+    margin-top:10px;
+    margin-left: 20px;
+    font-size: 15px;
+
+}
+.top-players-ul-2 p{
+    font-size: 10px;
+}
+.top-players-cara{
+    height: 15px;
+}
+.top-players-bandera{
+    height: 15px;
+}
+}
+
+@media only screen and (max-width: 450px){
+    .top-players-contenedor{
+        background-size: contain;
+        background-repeat: repeat;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .top-players-padre{
     display: flex;
@@ -373,6 +575,7 @@ footer a{
     text-align: center;
     margin-top: 50px;
 }
+
 
 .top-players-ul{
     color: #87a3bf;
@@ -390,13 +593,8 @@ footer a{
     padding: 15px;
     border: 1px solid gray;
 }
-.top-players-cara{
-    height: 30px;
-    width: 30px;
-}
-.top-players-bandera{
-    height: 18px;
-}
+
+
 
 .section-top-players{
     width: 100%;
@@ -410,33 +608,6 @@ footer a{
 
 /* Resultados.html */ /* Resultados.html */ /* Resultados.html */ /* Resultados.html */ /* Resultados.html */
 
-.resultados-padre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px;
-}
-.resultados-ul{
-    color: #87a3bf;
-    font-size: 25px;
-    border: 2px solid gray;
-    width: 370px;
-    background-color: #1b263b;
-    list-style-type: none;
-    margin-top: 50px;
-}
-
-.resultados-ul li{
-    font-size: 20px;
-    color: #929a9e;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    border: 1px solid gray;
-}
-
 .victoria{
     color: green;
 }
@@ -445,8 +616,105 @@ footer a{
     color: red;
 }
 
-.section-resultados{
-    width: 100%;
+.resultados-boost-contenedor{
+    background-image: url(../Img/trofeo.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.resultados-boost-left{
+    margin-top: 300px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+
+}
+.list-group{
+    width: 500px;
+    height: 800px;
+}
+
+.list-group a{
+    display: flex;
+    border: 2px solid orange;
+    background-color: #1b263b;
+    color: orange;
+    justify-content: center;
+    letter-spacing: 10px;
+}
+
+.list-group a:hover{
+    background-color: rgb(175, 172, 172);
+}
+
+.resultados-boost-mid{
+    margin-top: 300px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.resultados-boost-right{
+    margin-top: 300px;
+    margin-right: 20px;
+
+}
+
+@media only screen and (max-width:1520px) {
+    .resultados-boost-contenedor{
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .list-group{
+        height: 200px;
+
+    }
+
+    .resultados-boost-left{
+        margin-top: 20px;
+    }
+
+    .resultados-boost-mid{
+        margin-top: 80px;
+    }
+
+    .resultados-boost-right{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width:572px){
+    
+    .logo-partidos{
+        height: 10px;
+    }
+
+    .list-group{
+        width: 300px;
+        font-size: 5px;
+    }
+
+    .resultados-boost-left{
+        margin-right: 20px;
+    }
+    .resultados-boost-mid{
+        margin-top: 5px;
+    }
+    .resultados-boost-right{
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+        
+    }
 }
