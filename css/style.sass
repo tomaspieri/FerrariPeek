@@ -1,0 +1,583 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+@font-face
+    font-family: darkadam
+    src: url(Fonts/Dark\ Adam.ttf)
+
+
+body
+    background-color: black
+
+#logoresponsive
+    font-family: darkadam
+    border-style: outset
+    border-color: #dccaca
+    border-radius: 20px
+    border-width: 10px
+    text-align: center
+    a
+        text-decoration: none
+        color: orange
+        font-size: 100px
+
+.menu
+    display: flex
+    list-style-type: none
+    justify-content: center
+    border-style: solid
+    background-color: #1b263b
+    margin: 0
+    li
+        a
+            text-decoration: none
+            color: gray
+            cursor: crosshair
+            font-size: 16px
+    li
+        padding: 1em
+        border-right: 1px solid gray
+        border-left: 1px solid gray
+    li:hover
+        background-color: #2a3240
+        a:hover
+            color: orange
+
+@media only screen and (max-width: 444px)
+    .menu
+        li 
+            font-size: 5px
+            height: 25px
+            width: 90px
+
+    #logoresponsive
+        text-align: center
+        color: orange
+        padding: 15px
+        a
+            font-size: 25px
+            text-decoration: none
+            a:hover
+                color: orange
+
+/* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX / /* INDEX */
+.contenedor
+    display: flex
+    justify-content: space-between
+    align-items: start
+    width: 80vw
+    margin: auto
+    text-align: center
+    background-color: #1c1f24
+    .columna1
+        color: white
+        display: flex
+        justify-content: left
+        flex-direction: column
+        width: 25%
+        span
+            color: orange
+        .subtitulo1
+            color: orange
+            text-transform: uppercase
+            text-align: center
+            list-style-type: none
+            margin-top: 50px
+    .columna2
+        display: flex
+        justify-content: center
+        flex-direction: column
+        width: 50%
+        margin-bottom: 100px
+        h2
+            color: orange
+            text-transform: uppercase
+        .subtitulo-medio
+            text-align: center
+            padding: 50px
+            font-weight: bold
+            text-transform: uppercase
+        .noticia
+            color: white
+            display: flex
+            text-justify: auto
+            flex-direction: column
+            text-decoration: none
+            text-align: center
+            padding: 2em
+            background-color: #2f3844
+            border-bottom: 1px solid gray
+        .noticia:hover
+                background-color: #2a3240
+    .columna3
+        display: flex
+        justify-content: right
+        flex-direction: column
+        width: 25%
+        .noticia-derecha
+            display: flex
+            justify-content: right
+            flex-direction: column
+            text-align: center
+            font-size: 1rem
+            font-weight: lighter
+            margin-top: 50px
+            color: orange
+            text-transform: uppercase
+        .videosimple
+            width: 250px
+            padding: 1em
+
+@media only screen and (max-width: 1220px)
+    .contenedor
+        width: 100vw
+    .columna1
+        order: 2
+    .columna2
+        order: 1
+    .columna3
+        order: 3
+
+@media only screen and (max-width: 1006px) 
+    .contenedor
+        display: flex
+        flex-direction: column
+        align-items: center
+        .columna2
+            align-items: center
+            .cs2foto
+                width: 400px
+        .columna1
+            align-items: center
+        .columna3
+            align-items: center
+
+@media only screen and (max-width: 424px)
+    .contenedor
+        .columna2
+            .cs2foto
+                width: 300px
+
+/* Galeria.html / / Galeria.html / / Galeria.html / / Galeria.html / / Galeria.html / / Galeria.html */
+
+.galeria-responsive
+    width: 100%
+    min-height: 500px
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: repeat(7, 200px)
+    grid-gap: 10px
+    padding-top: 50px
+    padding: 20px
+    
+.galeria-border-r
+    border: 3px solid orange
+    background-size: cover
+    background-position: center
+    padding-top: 50px
+    border-radius: 10px
+    transition: all 0.9s
+
+    &:hover
+        transform: scale(1.04)
+        transition: all 0.9s
+        filter: sepia(100%)
+    
+#lukenn
+    background-image: url(../Img/luken.jpg)
+
+#b1tt
+    background-image: url(../Img/b1t.jpg)
+
+#s1mplee
+    background-image: url(../Img/simple1.jpg)
+
+#karrigann
+    background-image: url(../Img/karrigan.jpg)
+
+#monitoress
+    background-image: url(../Img/monitorcs.jpg)
+
+#cadiann
+    background-image: url(../Img/cadiaN.jpg)
+
+#cs22
+    background-image: url(../Img/cs2.jpg)
+
+footer
+    background-color: #1b263b
+    color: #fff
+    text-align: center
+    padding: 20px
+    p
+        margin-bottom: 20px
+        color: orange
+        font-size: 25px
+        text-shadow: 0 0 10px black, 0 0 10px black
+    a
+        color: orange
+        font-size: 30px
+        letter-spacing: 15px
+        text-decoration: none
+        text-shadow: 0 0 10px black, 0 0 10px black
+
+@media only screen and (min-width: 480px)
+    #logoresponsive
+        a
+            font-size: 40px
+
+    .galeria-responsive
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: repeat(4, 200px)
+        grid-gap: 10px
+        padding: 20px
+        padding-top: 50px
+
+#karrigann
+    grid-column: 1/3
+
+@media only screen and (min-width:570px)
+.galeria-responsive
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 200px)
+    grid-gap: 10px
+    padding: 20px
+    padding-top: 50px
+
+#cadiann
+    grid-column: 3/4
+    grid-row: 2/4
+
+@media only screen and (min-width: 768px)
+    #logoresponsive
+        a
+            font-size: 80px
+
+    .galeria-responsive
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(4, 200px)
+        background-position: center
+        background-size: cover
+        grid-gap: 20px 5px
+        padding: 20px
+        padding-top: 50px
+
+    #lukenn
+        grid-column: 1/2
+        grid-row: 1/3
+
+    #cs22
+        grid-column: 2/4
+        grid-row: 1/2
+
+    #b1tt
+        grid-column: 2/3
+        grid-row: 2/3
+
+    #cadiann
+        grid-column: 3/4
+        grid-row: 2/4
+
+    #monitoress
+        grid-column: 1/3
+        grid-row: 3/4
+
+    #s1mplee
+        grid-column: 1/2
+        grid-row: 4/5
+
+    #karrigann
+        grid-column: 2/4
+        grid-row: 4/5
+
+@media only screen and (min-width: 1024px)
+    #logoresponsive
+        a
+            font-size: 100px
+
+    .galeria-responsive
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 400px 200px 400px 400px
+        padding-top: 50px
+
+    #karrigann
+        background-position: unset
+
+/* Partidos.html /  /* Partidos.html /  / Partidos.html /  / Partidos.html /  / Partidos.html */ 
+
+.logo-partidos
+    height: 25px
+
+.contenedor-container
+    background-color: rgb(21, 181, 230)
+    background-image: url(../Img/escenario.png)
+    background-repeat: no-repeat
+    background-size: cover
+
+@media screen and (max-width: 1500px)
+    .contenedor-container
+        background-size: contain
+        background-repeat: repeat
+    
+.container
+    padding-top: 50px
+    padding-bottom: 50px
+    a
+        display: flex
+        border: 2px solid orange
+        justify-content: center
+        padding: 50px
+        letter-spacing: 5px
+        background-color: #1b263b
+        color: orange
+
+@media screen and (max-width: 768px)
+    .container
+        a
+            font-size: 10px
+
+@media screen and (max-width:358px)
+    .logo-partidos
+        height: 10px
+
+    .container 
+        a
+            font-size: 11px
+            height: 25px
+            width: 300px
+            letter-spacing: normal
+
+/* Estadisticas.html / / Estadisticas.html  / / Estadisticas.html / / Estadisticas.html */
+.top-players-bandera
+    height: 18px
+
+.top-players-contenedor
+    display: flex
+    justify-content: space-between
+    text-align: center
+    background-image: url(../Img/csgofondo.jpg)
+    height: 1000px
+    background-size: cover
+    h2
+        height: 30px
+        font-size: 50px
+        margin-top: 80px
+        margin-left: 80px
+        text-decoration: underline
+        color: orange
+        text-shadow: 2px 2px 30px
+
+.top-players-left
+    background-color: #1b263b
+    color: orange
+    width: 500px
+    height: 320px
+    margin-top: 340px
+    margin-left: 100px
+
+.top-players-right
+    @extend .top-players-left
+    margin-right: 100px
+
+.top-players-ul-2
+    list-style-type: none
+    text-align: center
+    font-size: 15px
+    li
+        border: 2px solid orange
+        height: 80px
+    li:hover
+            background-color: gray
+
+.top-players-cara
+    height: 30px
+
+@media only screen and (max-width: 1772px)
+    .top-players-contenedor
+        height: 600px
+        h2
+            font-size: 50px
+            margin-top: 40px
+            margin-left: 40px
+            font-size: 30px
+    .top-players-left
+        width: 600px
+        margin-top: 150px
+    .top-players-right
+        width: 600px
+        margin-top: 150px
+    .top-players-ul-2 
+        p
+            font-size: 15px
+            display: flex
+            justify-content: center
+    .top-players-cara
+        height: 20px
+
+@media only screen and (max-width: 967px)
+    .top-players-contenedor
+        height: 500px
+        h2
+            font-size: 50px
+            margin-top: 40px
+            margin-left: 40px
+            font-size: 30px
+    .top-players-left
+        margin-top: 100px
+    .top-players-right
+        margin-top: 100px
+
+    .top-players-ul-2 
+        p
+            font-size: 15px
+            display: flex
+            justify-content: center
+
+    .top-players-cara
+        height: 20px
+
+@media only screen and (max-width: 615px)
+    .top-players-contenedor
+        display: flex
+        background-size: cover
+        background-repeat: no-repeat
+        h2
+            margin-top: 10px
+            margin-left: 20px
+            font-size: 15px
+    .top-players-left
+        margin-top: 30px
+        margin-left: 20px
+        width: 200px
+        height: 320px
+
+    .top-players-right
+        margin-top: 30px
+        margin-right: 20px
+        width: 200px
+        height: 320px
+    .top-players-ul-2 
+        p
+            font-size: 10px
+
+    .top-players-cara
+        height: 15px
+
+    .top-players-bandera
+        height: 15px
+
+@media only screen and (max-width: 450px)
+    .top-players-contenedor
+        background-size: contain
+        background-repeat: repeat
+    .top-players-ul
+        color: #87a3bf
+        font-size: 25px
+        border: 2px solid gray
+        width: 300px
+        background-color: #1b263b
+        list-style-type: none
+        text-align: left
+        margin-top: 50px
+        display: flex
+        flex-direction: column
+        li
+            padding: 15px
+            border: 1px solid gray
+    .section-top-players
+        width: 100%
+        display: flex
+        justify-content: center
+    .kd
+        font-size: 15px
+
+/* Resultados.html  / Resultados.html  / /  Resultados.html  / /  Resultados.html  / /  Resultados.html  */
+
+.victoria
+    color: green
+
+.derrota
+    color: red
+
+.resultados-boost-contenedor
+    background-image: url(../Img/trofeo.png)
+    background-size: cover
+    display: flex
+    justify-content: space-between
+    text-align: center
+
+.resultados-boost-left
+    margin-top: 300px
+    margin-left: 20px
+    display: flex
+    justify-content: left
+    flex-direction: column
+
+.list-group
+    width: 500px
+    height: 800px
+    a
+        display: flex
+        border: 2px solid orange
+        background-color: #1b263b
+        color: orange
+        justify-content: center
+        letter-spacing: 10px
+    a:hover
+        background-color: rgb(175, 172, 172)
+
+.resultados-boost-mid
+    margin-top: 300px
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+.resultados-boost-right
+    margin-top: 300px
+    margin-right: 20px
+
+@media only screen and (max-width:1520px)
+    .resultados-boost-contenedor
+        background-size: contain
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    
+    .list-group
+        height: 200px
+
+    .resultados-boost-left
+        margin-top: 20px
+
+    .resultados-boost-mid
+        margin-top: 80px
+        margin-left: 20px
+
+    .resultados-boost-right
+        margin-top: 80px
+        margin-left: 40px
+        margin-bottom: 100px
+
+@media only screen and (max-width:572px)
+
+    .logo-partidos
+        height: 10px
+
+    .list-group
+        width: 300px
+        font-size: 5px
+
+    .resultados-boost-left
+        margin-right: 20px
+
+    .resultados-boost-mid
+        margin-top: 5px
+        margin-left: 0px
+
+    .resultados-boost-right
+        margin-top: 5px
+        margin-left: 20px
+        margin-bottom: 50px
